@@ -6,7 +6,7 @@ async function getMenu() {
                 message: response.status
             }
         }
-        const result = response.json();
+        const result = await response.json();
         return result;
     }
     catch(error){

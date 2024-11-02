@@ -6,6 +6,7 @@
 |  Project Name                            | Difficulties   | Started Date   | End Date    |
 |------------------------------------------|----------------|----------------|-------------|
 |  Product List with Cart                  | Junior         | Oct 26, 2024   | Oct 30, 2024|
+|  Space Travel                            | Intermediate   | Oct 30, 2024   |             |
 
 **Keep going Sai, make your parents, brothers and your little mermaid proud.**
 
