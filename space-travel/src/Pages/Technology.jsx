@@ -42,10 +42,6 @@ const Technology = () => {
     const setIdParam = useCallback((id) => (
         setParam('id', id)
     ),[setParam])
-
-    const getButtonStyles = (id) => {
-        idFilter === id ? 'active' : ''
-    }
     
     return (
         <>
@@ -66,19 +62,19 @@ const Technology = () => {
 
             <div className="tech-btn-group flex">
                 <Button
-                    className={`number-btn ${getButtonStyles(1)}`}
+                    className={`number-btn ${idFilter === 1 ? 'active': ''}`}
                     onClick={() => setIdParam(1)}>
                     1
                 </Button>
 
                 <Button
-                    className={`number-btn ${getButtonStyles(2)}`}
+                    className={`number-btn ${idFilter === 2 ? 'active': ''}`}
                     onClick={() => setIdParam(2)}>
                     2
                 </Button>
 
                 <Button
-                    className={`number-btn ${getButtonStyles(3)}`}
+                    className={`number-btn ${idFilter === 3 ? 'active': ''}`}
                     onClick={() => setIdParam(3)}>
                     3
                 </Button>

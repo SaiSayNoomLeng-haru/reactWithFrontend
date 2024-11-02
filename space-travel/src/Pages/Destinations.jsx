@@ -64,9 +64,7 @@ const Destinations = () => {
         setParam('name', name)
     ), [setParam])
 
-    const getButtonStyles = (filterName) => {
-        nameFilter === filterName ? {...style, ...activeStyle} : style
-    }
+
 
     return(
        <section id="destination" className="destination container">
@@ -82,25 +80,25 @@ const Destinations = () => {
 
             <div className="button-group">
                 <Button 
-                  style={getButtonStyles('moon')}  
+                  style={nameFilter === 'moon' ? {...style, ...activeStyle} : style}  
                  onClick={() => setNameParam('moon')}>
                     Moon
                  </Button>
 
                  <Button 
-                   style={getButtonStyles('mars')}  
+                   style={nameFilter === 'mars' ? {...style, ...activeStyle} : style}  
                   onClick={() => setNameParam('mars')}>
                     Mars
                  </Button>
 
                  <Button 
-                   style={getButtonStyles('europa')}  
+                   style={nameFilter === 'europa' ? {...style, ...activeStyle} : style}  
                   onClick={() => setNameParam('europa')}>
                     Europa
                  </Button>
 
                  <Button 
-                   style={getButtonStyles('titan')}  
+                   style={nameFilter === 'titan' ? {...style, ...activeStyle} : style}  
                   onClick={() => setNameParam('titan')}>
                     Titan
                  </Button>

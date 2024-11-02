@@ -41,9 +41,7 @@ const Crew = () => {
         setParam('id', id)
     ), [setParam])
 
-    const getButtonStyles = (id) => {
-        idFilter === id ? 'active' : ''
-    }
+ 
 
     return (
        <section id="crew" className="crew container grid">
@@ -59,22 +57,22 @@ const Crew = () => {
 
              <div className="crew-button-group flex">
                 <Button
-                    className={`circle-btn bg-muted ${getButtonStyles(1)}`}
+                    className={`circle-btn bg-muted ${idFilter === 1 ? 'active' : ''}`}
                     onClick={() => setIdParam(1)}
                 ></Button>
 
                 <Button
-                    className={`circle-btn bg-muted ${getButtonStyles(2)}`}
+                    className={`circle-btn bg-muted ${idFilter === 2 ? 'active' : ''}`}
                     onClick={() => setIdParam(2)}
                 ></Button>
 
                 <Button
-                    className={`circle-btn bg-muted ${getButtonStyles(3)}`}
+                    className={`circle-btn bg-muted ${idFilter === 3 ? 'active' : ''}`}
                     onClick={() => setIdParam(3)}
                 ></Button>
 
                 <Button
-                    className={`circle-btn bg-muted ${getButtonStyles(4)}`}
+                    className={`circle-btn bg-muted ${idFilter === 4 ? 'active' : ''}`}
                     onClick={() => setIdParam(4)}
                 ></Button>
              </div>
