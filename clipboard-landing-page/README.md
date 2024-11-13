@@ -22,9 +22,9 @@
 - JS
 
 **Self Notes**
-
-
-
+- Tailwind CSS configuration
 
 **Snapshots**
+[!mobile](./public/assets/snapshots/mobile.png)
+[!tablet](./public/assets/snapshots/tablet.png)
 

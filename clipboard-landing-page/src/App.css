@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+  h1,h2{
+    @apply text-3xl font-bold text-slate-600;
+  }
+  p{
+    @apply text-sm text-slate-500 font-medium
+  }
+  section{
+    @apply container grid place-items-center text-center gap-3 py-10 
+  }
+  img{
+    @apply max-w-full block
+  }
+}
+
+header{
+  @apply min-h-screen;
+  background: url("./assets/img/bg-header-mobile.png") no-repeat center top;
+  background-size: cover;
+}
+
+.svg-icons{
+  font-size: 5rem;
+  @apply text-slate-400 place-self-center
+}
+
+@media screen('md'){
+  header{
+    background: url("./assets/img/bg-header-desktop.png") no-repeat center top;
+  }
+
+  .svg-icons{
+    font-size: 3rem;
+  }
+}
+
