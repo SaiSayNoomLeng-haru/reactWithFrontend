@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body{
+    @apply min-h-screen font-body bg-white text-dark-gray leading-normal overflow-x-hidden text-custom-base
+  }
+}
